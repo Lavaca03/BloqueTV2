@@ -1,0 +1,15 @@
+{
+  "name": "bloquetv",
+  "version": "2.17.5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "check": "node --check server.mjs && node --check lib/jkanime.mjs && node --check lib/remote.mjs && node --check lib/donghua-pages.mjs && node --check lib/downloads.mjs && node --check public/episode-identity.js && node --check public/app.js && node --check public/downloads.js && node --check public/display-text.js && node --check public/sw.js",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
